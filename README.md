@@ -6,7 +6,7 @@
 
 - [ ] Android: _Java/Kotlin_ | iOS: _Swift_
 - [ ] exchange rates must be fetched from: http://fixer.io/  
-- [ ] rates should be persisted locally and refresed no more frequently than every 30 minutes
+- [ ] rates should be persisted locally and refreshed no more frequently than every 30 minutes
 - [ ] user must be able to select the input currency from the list of supplied values
 
 ### Evaluation:
@@ -14,11 +14,6 @@
 - [ ] No crashes or bugs
 - [ ] SOLID principles
 - [ ] Code is understandable and maintainable
-
-### Bonus Points:
-- [ ] unit & integration tests
-- [ ] dependency injection
-- [ ] functional/reactive
 
 UI Suggestion: Input field with a drop-down currency selector, and a list/grid of converted values below.
 
