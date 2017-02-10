@@ -1,0 +1,554 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D150CB9A1E4D50EB000391BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CB991E4D50EB000391BC /* AppDelegate.swift */; };
+		D150CB9C1E4D50EB000391BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CB9B1E4D50EB000391BC /* ViewController.swift */; };
+		D150CB9F1E4D50EB000391BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D150CB9D1E4D50EB000391BC /* Main.storyboard */; };
+		D150CBA21E4D50EB000391BC /* PayTM_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D150CBA01E4D50EB000391BC /* PayTM_1.xcdatamodeld */; };
+		D150CBA41E4D50EB000391BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D150CBA31E4D50EB000391BC /* Assets.xcassets */; };
+		D150CBA71E4D50EB000391BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D150CBA51E4D50EB000391BC /* LaunchScreen.storyboard */; };
+		D150CBB21E4D50EC000391BC /* PayTM_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBB11E4D50EC000391BC /* PayTM_1Tests.swift */; };
+		D150CBBD1E4D50EC000391BC /* PayTM_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBBC1E4D50EC000391BC /* PayTM_1UITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D150CBAE1E4D50EC000391BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D150CB8E1E4D50EB000391BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D150CB951E4D50EB000391BC;
+			remoteInfo = PayTM_1;
+		};
+		D150CBB91E4D50EC000391BC /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D150CB8E1E4D50EB000391BC /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D150CB951E4D50EB000391BC;
+			remoteInfo = PayTM_1;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D150CB961E4D50EB000391BC /* PayTM_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayTM_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D150CB991E4D50EB000391BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D150CB9B1E4D50EB000391BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D150CB9E1E4D50EB000391BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D150CBA11E4D50EB000391BC /* PayTM_1.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PayTM_1.xcdatamodel; sourceTree = "<group>"; };
+		D150CBA31E4D50EB000391BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D150CBA61E4D50EB000391BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D150CBA81E4D50EB000391BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D150CBAD1E4D50EC000391BC /* PayTM_1Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayTM_1Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D150CBB11E4D50EC000391BC /* PayTM_1Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayTM_1Tests.swift; sourceTree = "<group>"; };
+		D150CBB31E4D50EC000391BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D150CBB81E4D50EC000391BC /* PayTM_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayTM_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D150CBBC1E4D50EC000391BC /* PayTM_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayTM_1UITests.swift; sourceTree = "<group>"; };
+		D150CBBE1E4D50EC000391BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D150CB931E4D50EB000391BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D150CBAA1E4D50EC000391BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D150CBB51E4D50EC000391BC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D150CB8D1E4D50EB000391BC = {
+			isa = PBXGroup;
+			children = (
+				D150CB981E4D50EB000391BC /* PayTM_1 */,
+				D150CBB01E4D50EC000391BC /* PayTM_1Tests */,
+				D150CBBB1E4D50EC000391BC /* PayTM_1UITests */,
+				D150CB971E4D50EB000391BC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D150CB971E4D50EB000391BC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D150CB961E4D50EB000391BC /* PayTM_1.app */,
+				D150CBAD1E4D50EC000391BC /* PayTM_1Tests.xctest */,
+				D150CBB81E4D50EC000391BC /* PayTM_1UITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D150CB981E4D50EB000391BC /* PayTM_1 */ = {
+			isa = PBXGroup;
+			children = (
+				D150CB991E4D50EB000391BC /* AppDelegate.swift */,
+				D150CB9B1E4D50EB000391BC /* ViewController.swift */,
+				D150CB9D1E4D50EB000391BC /* Main.storyboard */,
+				D150CBA31E4D50EB000391BC /* Assets.xcassets */,
+				D150CBA51E4D50EB000391BC /* LaunchScreen.storyboard */,
+				D150CBA81E4D50EB000391BC /* Info.plist */,
+				D150CBA01E4D50EB000391BC /* PayTM_1.xcdatamodeld */,
+			);
+			path = PayTM_1;
+			sourceTree = "<group>";
+		};
+		D150CBB01E4D50EC000391BC /* PayTM_1Tests */ = {
+			isa = PBXGroup;
+			children = (
+				D150CBB11E4D50EC000391BC /* PayTM_1Tests.swift */,
+				D150CBB31E4D50EC000391BC /* Info.plist */,
+			);
+			path = PayTM_1Tests;
+			sourceTree = "<group>";
+		};
+		D150CBBB1E4D50EC000391BC /* PayTM_1UITests */ = {
+			isa = PBXGroup;
+			children = (
+				D150CBBC1E4D50EC000391BC /* PayTM_1UITests.swift */,
+				D150CBBE1E4D50EC000391BC /* Info.plist */,
+			);
+			path = PayTM_1UITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D150CB951E4D50EB000391BC /* PayTM_1 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D150CBC11E4D50EC000391BC /* Build configuration list for PBXNativeTarget "PayTM_1" */;
+			buildPhases = (
+				D150CB921E4D50EB000391BC /* Sources */,
+				D150CB931E4D50EB000391BC /* Frameworks */,
+				D150CB941E4D50EB000391BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PayTM_1;
+			productName = PayTM_1;
+			productReference = D150CB961E4D50EB000391BC /* PayTM_1.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D150CBAC1E4D50EC000391BC /* PayTM_1Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D150CBC41E4D50EC000391BC /* Build configuration list for PBXNativeTarget "PayTM_1Tests" */;
+			buildPhases = (
+				D150CBA91E4D50EC000391BC /* Sources */,
+				D150CBAA1E4D50EC000391BC /* Frameworks */,
+				D150CBAB1E4D50EC000391BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D150CBAF1E4D50EC000391BC /* PBXTargetDependency */,
+			);
+			name = PayTM_1Tests;
+			productName = PayTM_1Tests;
+			productReference = D150CBAD1E4D50EC000391BC /* PayTM_1Tests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D150CBB71E4D50EC000391BC /* PayTM_1UITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D150CBC71E4D50EC000391BC /* Build configuration list for PBXNativeTarget "PayTM_1UITests" */;
+			buildPhases = (
+				D150CBB41E4D50EC000391BC /* Sources */,
+				D150CBB51E4D50EC000391BC /* Frameworks */,
+				D150CBB61E4D50EC000391BC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D150CBBA1E4D50EC000391BC /* PBXTargetDependency */,
+			);
+			name = PayTM_1UITests;
+			productName = PayTM_1UITests;
+			productReference = D150CBB81E4D50EC000391BC /* PayTM_1UITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D150CB8E1E4D50EB000391BC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0820;
+				ORGANIZATIONNAME = "Konstantin Klyatskin";
+				TargetAttributes = {
+					D150CB951E4D50EB000391BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y9ZFK399Y3;
+						ProvisioningStyle = Automatic;
+					};
+					D150CBAC1E4D50EC000391BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y9ZFK399Y3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D150CB951E4D50EB000391BC;
+					};
+					D150CBB71E4D50EC000391BC = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = Y9ZFK399Y3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = D150CB951E4D50EB000391BC;
+					};
+				};
+			};
+			buildConfigurationList = D150CB911E4D50EB000391BC /* Build configuration list for PBXProject "PayTM_1" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D150CB8D1E4D50EB000391BC;
+			productRefGroup = D150CB971E4D50EB000391BC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D150CB951E4D50EB000391BC /* PayTM_1 */,
+				D150CBAC1E4D50EC000391BC /* PayTM_1Tests */,
+				D150CBB71E4D50EC000391BC /* PayTM_1UITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D150CB941E4D50EB000391BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D150CBA71E4D50EB000391BC /* LaunchScreen.storyboard in Resources */,
+				D150CBA41E4D50EB000391BC /* Assets.xcassets in Resources */,
+				D150CB9F1E4D50EB000391BC /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D150CBAB1E4D50EC000391BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D150CBB61E4D50EC000391BC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D150CB921E4D50EB000391BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D150CB9C1E4D50EB000391BC /* ViewController.swift in Sources */,
+				D150CB9A1E4D50EB000391BC /* AppDelegate.swift in Sources */,
+				D150CBA21E4D50EB000391BC /* PayTM_1.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D150CBA91E4D50EC000391BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D150CBB21E4D50EC000391BC /* PayTM_1Tests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D150CBB41E4D50EC000391BC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D150CBBD1E4D50EC000391BC /* PayTM_1UITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D150CBAF1E4D50EC000391BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D150CB951E4D50EB000391BC /* PayTM_1 */;
+			targetProxy = D150CBAE1E4D50EC000391BC /* PBXContainerItemProxy */;
+		};
+		D150CBBA1E4D50EC000391BC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D150CB951E4D50EB000391BC /* PayTM_1 */;
+			targetProxy = D150CBB91E4D50EC000391BC /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D150CB9D1E4D50EB000391BC /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D150CB9E1E4D50EB000391BC /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D150CBA51E4D50EB000391BC /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D150CBA61E4D50EB000391BC /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D150CBBF1E4D50EC000391BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D150CBC01E4D50EC000391BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D150CBC21E4D50EC000391BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y9ZFK399Y3;
+				INFOPLIST_FILE = PayTM_1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetdrives.PayTM-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		D150CBC31E4D50EC000391BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = Y9ZFK399Y3;
+				INFOPLIST_FILE = PayTM_1/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetdrives.PayTM-1";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		D150CBC51E4D50EC000391BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y9ZFK399Y3;
+				INFOPLIST_FILE = PayTM_1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetdrives.PayTM-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayTM_1.app/PayTM_1";
+			};
+			name = Debug;
+		};
+		D150CBC61E4D50EC000391BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				DEVELOPMENT_TEAM = Y9ZFK399Y3;
+				INFOPLIST_FILE = PayTM_1Tests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetdrives.PayTM-1Tests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/PayTM_1.app/PayTM_1";
+			};
+			name = Release;
+		};
+		D150CBC81E4D50EC000391BC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y9ZFK399Y3;
+				INFOPLIST_FILE = PayTM_1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetdrives.PayTM-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PayTM_1;
+			};
+			name = Debug;
+		};
+		D150CBC91E4D50EC000391BC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				DEVELOPMENT_TEAM = Y9ZFK399Y3;
+				INFOPLIST_FILE = PayTM_1UITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.planetdrives.PayTM-1UITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = PayTM_1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D150CB911E4D50EB000391BC /* Build configuration list for PBXProject "PayTM_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D150CBBF1E4D50EC000391BC /* Debug */,
+				D150CBC01E4D50EC000391BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D150CBC11E4D50EC000391BC /* Build configuration list for PBXNativeTarget "PayTM_1" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D150CBC21E4D50EC000391BC /* Debug */,
+				D150CBC31E4D50EC000391BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D150CBC41E4D50EC000391BC /* Build configuration list for PBXNativeTarget "PayTM_1Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D150CBC51E4D50EC000391BC /* Debug */,
+				D150CBC61E4D50EC000391BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		D150CBC71E4D50EC000391BC /* Build configuration list for PBXNativeTarget "PayTM_1UITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D150CBC81E4D50EC000391BC /* Debug */,
+				D150CBC91E4D50EC000391BC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D150CBA01E4D50EB000391BC /* PayTM_1.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D150CBA11E4D50EB000391BC /* PayTM_1.xcdatamodel */,
+			);
+			currentVersion = D150CBA11E4D50EB000391BC /* PayTM_1.xcdatamodel */;
+			path = PayTM_1.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D150CB8E1E4D50EB000391BC /* Project object */;
+}
