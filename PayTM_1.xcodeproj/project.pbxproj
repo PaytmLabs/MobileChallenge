@@ -15,6 +15,12 @@
 		D150CBA71E4D50EB000391BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D150CBA51E4D50EB000391BC /* LaunchScreen.storyboard */; };
 		D150CBB21E4D50EC000391BC /* PayTM_1Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBB11E4D50EC000391BC /* PayTM_1Tests.swift */; };
 		D150CBBD1E4D50EC000391BC /* PayTM_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBBC1E4D50EC000391BC /* PayTM_1UITests.swift */; };
+		D150CBCD1E4D692E000391BC /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBCC1E4D692E000391BC /* DataProvider.swift */; };
+		D150CBCF1E4D7011000391BC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBCE1E4D7011000391BC /* CoreDataStack.swift */; };
+		D1FE010A1E4E0E02004479D8 /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE01091E4E0E02004479D8 /* RateCell.swift */; };
+		D1FE010C1E4E18EA004479D8 /* NetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */; };
+		D1FE010E1E4E245F004479D8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010D1E4E245F004479D8 /* DataModel.swift */; };
+		D1FE01101E4E436B004479D8 /* MockNetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +55,12 @@
 		D150CBB81E4D50EC000391BC /* PayTM_1UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PayTM_1UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D150CBBC1E4D50EC000391BC /* PayTM_1UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayTM_1UITests.swift; sourceTree = "<group>"; };
 		D150CBBE1E4D50EC000391BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D150CBCC1E4D692E000391BC /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
+		D150CBCE1E4D7011000391BC /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		D1FE01091E4E0E02004479D8 /* RateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
+		D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStack.swift; sourceTree = "<group>"; };
+		D1FE010D1E4E245F004479D8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
+		D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkStack.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +111,13 @@
 		D150CB981E4D50EB000391BC /* PayTM_1 */ = {
 			isa = PBXGroup;
 			children = (
+				D150CBCC1E4D692E000391BC /* DataProvider.swift */,
+				D1FE010D1E4E245F004479D8 /* DataModel.swift */,
+				D150CBCE1E4D7011000391BC /* CoreDataStack.swift */,
+				D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */,
+				D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */,
 				D150CB991E4D50EB000391BC /* AppDelegate.swift */,
+				D1FE01091E4E0E02004479D8 /* RateCell.swift */,
 				D150CB9B1E4D50EB000391BC /* ViewController.swift */,
 				D150CB9D1E4D50EB000391BC /* Main.storyboard */,
 				D150CBA31E4D50EB000391BC /* Assets.xcassets */,
@@ -265,9 +283,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D150CBCF1E4D7011000391BC /* CoreDataStack.swift in Sources */,
 				D150CB9C1E4D50EB000391BC /* ViewController.swift in Sources */,
+				D1FE01101E4E436B004479D8 /* MockNetworkStack.swift in Sources */,
 				D150CB9A1E4D50EB000391BC /* AppDelegate.swift in Sources */,
+				D150CBCD1E4D692E000391BC /* DataProvider.swift in Sources */,
 				D150CBA21E4D50EB000391BC /* PayTM_1.xcdatamodeld in Sources */,
+				D1FE010E1E4E245F004479D8 /* DataModel.swift in Sources */,
+				D1FE010C1E4E18EA004479D8 /* NetworkStack.swift in Sources */,
+				D1FE010A1E4E0E02004479D8 /* RateCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -518,6 +542,7 @@
 				D150CBC31E4D50EC000391BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D150CBC41E4D50EC000391BC /* Build configuration list for PBXNativeTarget "PayTM_1Tests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +551,7 @@
 				D150CBC61E4D50EC000391BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D150CBC71E4D50EC000391BC /* Build configuration list for PBXNativeTarget "PayTM_1UITests" */ = {
 			isa = XCConfigurationList;
@@ -534,6 +560,7 @@
 				D150CBC91E4D50EC000391BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
