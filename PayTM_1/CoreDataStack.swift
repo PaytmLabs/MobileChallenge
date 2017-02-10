@@ -16,17 +16,12 @@ class CoreDataStack {
     static let dbName = "PayTM_1"
     
     lazy var persistentContainer: NSPersistentContainer = {
-        /*
-         The persistent container for the application. This implementation
-         creates and returns a container, having loaded the store for the
-         application to it. This property is optional since there are legitimate
-         error conditions that could cause the creation of the store to fail.
-         */
+
         let container = NSPersistentContainer(name: dbName)
         
         
-        let description = NSPersistentStoreDescription()
-        description.type = NSInMemoryStoreType
+//        let description = NSPersistentStoreDescription()
+//        description.type = NSInMemoryStoreType
 //        container.persistentStoreDescriptions = [description]
         
         
@@ -70,13 +65,12 @@ class CoreDataStack {
         }
     }
     
+
     func performForegroundTask(_ block: @escaping (NSManagedObjectContext) -> Void) {
         self.viewContext.perform {
             block(self.viewContext)
         }
     }
-  
-    
     
 }
 

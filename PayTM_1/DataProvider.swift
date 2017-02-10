@@ -11,12 +11,7 @@ import CoreData
 
 class DataProvider {
     
-
-
     static let shared = DataProvider()
-//    private init() {
-//    }
-    
     
     lazy var entityName = String(describing: ServerResponse.self)
     lazy var dataModel = DataModel()
@@ -91,4 +86,4 @@ class DataProvider {
     }
 
 }
-
+s
