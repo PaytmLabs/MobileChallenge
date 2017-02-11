@@ -23,7 +23,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         self.lblTimestamp.text = dataProvider.getLastServerResponse()?.timestamp ?? "no data yet..."
 
         
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onDatalUpdate), name: self.dataProvider.notificationName, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onDatalUpdate), name: Notifications.notificationDataUpdated(), object: nil)
 
 
     }

@@ -21,6 +21,7 @@
 		D1FE010C1E4E18EA004479D8 /* NetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */; };
 		D1FE010E1E4E245F004479D8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010D1E4E245F004479D8 /* DataModel.swift */; };
 		D1FE01101E4E436B004479D8 /* MockNetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */; };
+		D1FE01121E4EBC78004479D8 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE01111E4EBC78004479D8 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +62,7 @@
 		D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStack.swift; sourceTree = "<group>"; };
 		D1FE010D1E4E245F004479D8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkStack.swift; sourceTree = "<group>"; };
+		D1FE01111E4EBC78004479D8 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +114,7 @@
 			isa = PBXGroup;
 			children = (
 				D150CBCC1E4D692E000391BC /* DataProvider.swift */,
+				D1FE01111E4EBC78004479D8 /* Notifications.swift */,
 				D1FE010D1E4E245F004479D8 /* DataModel.swift */,
 				D150CBCE1E4D7011000391BC /* CoreDataStack.swift */,
 				D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */,
@@ -283,6 +286,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1FE01121E4EBC78004479D8 /* Notifications.swift in Sources */,
 				D150CBCF1E4D7011000391BC /* CoreDataStack.swift in Sources */,
 				D150CB9C1E4D50EB000391BC /* ViewController.swift in Sources */,
 				D1FE01101E4E436B004479D8 /* MockNetworkStack.swift in Sources */,

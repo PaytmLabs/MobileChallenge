@@ -15,7 +15,7 @@ class DataProvider {
     
     lazy var entityName = String(describing: ServerResponse.self)
     lazy var dataModel = DataModel()
-    let notificationName = Notification.Name("DataHasBeenUpdated")
+    let notificationName = Notifications.notificationDataUpdated()
 
     
     private var lastServerResponse: ServerResponse?
@@ -58,6 +58,7 @@ class DataProvider {
 
                 self.dataModel.update(data: data!)
                 NotificationCenter.default.post(name: self.notificationName, object: nil)
+                NotificationCenter.default.post(name: Notifications.notificationInputUpdated(), object: nil)
 
                 guard let response = self.getLastServerResponse()
                     else {
