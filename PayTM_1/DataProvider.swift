@@ -17,7 +17,6 @@ class DataProvider {
     lazy var dataModel = DataModel()
     let notificationName = Notifications.notificationDataUpdated()
 
-    
     private var lastServerResponse: ServerResponse?
     func getLastServerResponse ()-> ServerResponse? {
     
@@ -75,15 +74,27 @@ class DataProvider {
         NetworkStack.downloadRates(completionHandler: completion)
     }
     
+}
+
+
+extension DataProvider { // collection view + conversion value calc
     
     
-    func numberOfItems () -> Int {
+    func numberOfCurrencies () -> Int {
         return self.dataModel.rates.count
     }
 
-
-    func currencyForRow(_ row: Int)-> String {
+    func currency(forRow row: Int)-> String {
         return self.dataModel.currencies[row]
     }
-
+    
+    func conversionValue(forRow:Int)->String {
+        return "I am converted Value"
+    }
+    
+    // set current input value and currence + pass it to the model
+    
 }
+
+
+

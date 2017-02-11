@@ -48,16 +48,16 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {
         
-        return self.dataProvider.numberOfItems()
+        return self.dataProvider.numberOfCurrencies()
     }
     
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
     
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "RateCellID", for: indexPath) as! RateCell
-        
-        cell.lblRate.text = String(indexPath.row)
-        cell.lblCurrency.text = self.dataProvider.currencyForRow(indexPath.row)
+        cell.dataProvider = self.dataProvider
+        cell.atIndex = indexPath.row
+        cell.update()
         
         return cell
     }

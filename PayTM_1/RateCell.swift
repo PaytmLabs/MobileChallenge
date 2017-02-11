@@ -14,6 +14,10 @@ class RateCell: UICollectionViewCell {
     
     @IBOutlet weak var lblCurrency: UILabel!
     
+    
+    weak var dataProvider: DataProvider?
+    var atIndex: Int = 0
+    
 //    override init(frame: CGRect) {
 //        super.init(frame:frame)
 ////        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onCellUpdate), name: self.dataProvider.notificationName, object: nil)
@@ -24,9 +28,15 @@ class RateCell: UICollectionViewCell {
         NotificationCenter.default.addObserver(self, selector: #selector(RateCell.onCellUpdate), name: Notifications.notificationInputUpdated(), object: nil)
     }
 
+
     func onCellUpdate(notification:Notification) -> Void {
-        
-        self.lblCurrency.textColor = #colorLiteral(red: 0.521568656, green: 0.1098039225, blue: 0.05098039284, alpha: 1)
+        self.update()
+    }
+    
+    
+    func update() {
+        self.lblRate.text = String(atIndex)
+        self.lblCurrency.text = self.dataProvider?.currency(forRow:atIndex)
     }
     
 }
