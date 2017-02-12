@@ -44,6 +44,9 @@ class DataProvider {
     
     func updateData() {
         
+        //TPDO  update also 1-stamp label, 2-button,  3-cells.
+        
+        
         self.lastServerResponse = self.getLastServerResponse()
         if (self.lastServerResponse != nil) {
             self.dataModel.update(data: self.lastServerResponse?.data as! Data)

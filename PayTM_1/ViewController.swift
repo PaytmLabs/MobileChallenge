@@ -19,20 +19,36 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.updateUI()
+        self.addPadToolbarButtons()
         // Do any additional setup after loading the view, typically from a nib.
-        self.lblTimestamp.text = dataProvider.getLastServerResponse()?.timestamp ?? "no data yet..."
-
-        
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onDatalUpdate), name: Notifications.notificationDataUpdated(), object: nil)
-
-
     }
 
+    
+    func updateUI() {
+        self.lblTimestamp.text = dataProvider.getLastServerResponse()?.timestamp ?? "no data yet..."
+        self.btnCurrency.setTitle(self.dataProvider.currency(forRow:0)+" 🔽",for: .normal)
+    }
+    
     func onDatalUpdate () {
         // update UI
+        self.updateUI()
         self.collectionView.reloadData()
     }
     
+    func addPadToolbarButtons() {
+        
+        let numberPadToolbar = UIToolbar(frame: CGRect(x:0,y:0,width:self.view.bounds.size.width,height:44))
+        numberPadToolbar.barTintColor = #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1)
+        
+        numberPadToolbar.items = [
+            UIBarButtonItem(title: "Hide", style: UIBarButtonItemStyle.done, target: self.fldInput, action: #selector(resignFirstResponder))
+        ]
+        
+        self.fldInput.inputAccessoryView = numberPadToolbar
+    }
+
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -44,6 +60,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         super.viewDidAppear(animated)
         DataProvider.shared.updateData()
     }
+    
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {

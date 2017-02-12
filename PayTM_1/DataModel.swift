@@ -8,24 +8,7 @@
 
 import Foundation
 
-let baseCurrency = ["EUR":1.0]
-
-extension Dictionary {
-    
-    static func + <K,V>(left: Dictionary<K,V>, right: Dictionary<K,V>)
-        -> Dictionary<K,V>
-    {
-        var map = Dictionary<K,V>()
-        for (k, v) in left {
-            map[k] = v
-        }
-        for (k, v) in right {
-            map[k] = v
-        }
-        return map
-    }
-
-}
+var baseCurrency = ["EUR":1.0]
 
 class DataModel {
 
@@ -41,9 +24,9 @@ class DataModel {
         do {
             let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
 
-// TODO            self.rates = baseCurrency + ( json!["rates"] as! [String : Double] )
             self.rates = json!["rates"] as! [String : Double]
-            self.currencies = Array(self.rates.keys)
+            self.rates[Array(baseCurrency.keys)[0]] = 1.0
+            self.currencies = Array(self.rates.keys).sorted()
  
         } catch {
             print("error in JSONSerialization")
