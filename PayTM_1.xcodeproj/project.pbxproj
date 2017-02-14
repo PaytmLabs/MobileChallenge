@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12E24181E52C566001B1193 /* String_currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12E24171E52C566001B1193 /* String_currency.swift */; };
+		D12E241A1E52C585001B1193 /* Date_timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12E24191E52C585001B1193 /* Date_timestamp.swift */; };
 		D150CB9A1E4D50EB000391BC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CB991E4D50EB000391BC /* AppDelegate.swift */; };
 		D150CB9C1E4D50EB000391BC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CB9B1E4D50EB000391BC /* ViewController.swift */; };
 		D150CB9F1E4D50EB000391BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D150CB9D1E4D50EB000391BC /* Main.storyboard */; };
@@ -17,6 +19,7 @@
 		D150CBBD1E4D50EC000391BC /* PayTM_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBBC1E4D50EC000391BC /* PayTM_1UITests.swift */; };
 		D150CBCD1E4D692E000391BC /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBCC1E4D692E000391BC /* DataProvider.swift */; };
 		D150CBCF1E4D7011000391BC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBCE1E4D7011000391BC /* CoreDataStack.swift */; };
+		D16E546F1E52939600D7401E /* UITextField_Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E546E1E52939600D7401E /* UITextField_Keyboard.swift */; };
 		D1FE010A1E4E0E02004479D8 /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE01091E4E0E02004479D8 /* RateCell.swift */; };
 		D1FE010C1E4E18EA004479D8 /* NetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */; };
 		D1FE010E1E4E245F004479D8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010D1E4E245F004479D8 /* DataModel.swift */; };
@@ -42,6 +45,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D12E24171E52C566001B1193 /* String_currency.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = String_currency.swift; path = Categories/String_currency.swift; sourceTree = "<group>"; };
+		D12E24191E52C585001B1193 /* Date_timestamp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Date_timestamp.swift; path = Categories/Date_timestamp.swift; sourceTree = "<group>"; };
 		D150CB961E4D50EB000391BC /* PayTM_1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PayTM_1.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D150CB991E4D50EB000391BC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D150CB9B1E4D50EB000391BC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -58,6 +63,7 @@
 		D150CBBE1E4D50EC000391BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D150CBCC1E4D692E000391BC /* DataProvider.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataProvider.swift; sourceTree = "<group>"; };
 		D150CBCE1E4D7011000391BC /* CoreDataStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
+		D16E546E1E52939600D7401E /* UITextField_Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextField_Keyboard.swift; path = Categories/UITextField_Keyboard.swift; sourceTree = "<group>"; };
 		D1FE01091E4E0E02004479D8 /* RateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
 		D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStack.swift; sourceTree = "<group>"; };
 		D1FE010D1E4E245F004479D8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
@@ -113,9 +119,9 @@
 		D150CB981E4D50EB000391BC /* PayTM_1 */ = {
 			isa = PBXGroup;
 			children = (
+				D1FE010D1E4E245F004479D8 /* DataModel.swift */,
 				D150CBCC1E4D692E000391BC /* DataProvider.swift */,
 				D1FE01111E4EBC78004479D8 /* Notifications.swift */,
-				D1FE010D1E4E245F004479D8 /* DataModel.swift */,
 				D150CBCE1E4D7011000391BC /* CoreDataStack.swift */,
 				D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */,
 				D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */,
@@ -127,6 +133,7 @@
 				D150CBA51E4D50EB000391BC /* LaunchScreen.storyboard */,
 				D150CBA81E4D50EB000391BC /* Info.plist */,
 				D150CBA01E4D50EB000391BC /* PayTM_1.xcdatamodeld */,
+				D16E54701E52944900D7401E /* Categories */,
 			);
 			path = PayTM_1;
 			sourceTree = "<group>";
@@ -147,6 +154,16 @@
 				D150CBBE1E4D50EC000391BC /* Info.plist */,
 			);
 			path = PayTM_1UITests;
+			sourceTree = "<group>";
+		};
+		D16E54701E52944900D7401E /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				D12E24171E52C566001B1193 /* String_currency.swift */,
+				D16E546E1E52939600D7401E /* UITextField_Keyboard.swift */,
+				D12E24191E52C585001B1193 /* Date_timestamp.swift */,
+			);
+			name = Categories;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -287,13 +304,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				D1FE01121E4EBC78004479D8 /* Notifications.swift in Sources */,
+				D16E546F1E52939600D7401E /* UITextField_Keyboard.swift in Sources */,
 				D150CBCF1E4D7011000391BC /* CoreDataStack.swift in Sources */,
 				D150CB9C1E4D50EB000391BC /* ViewController.swift in Sources */,
 				D1FE01101E4E436B004479D8 /* MockNetworkStack.swift in Sources */,
 				D150CB9A1E4D50EB000391BC /* AppDelegate.swift in Sources */,
+				D12E241A1E52C585001B1193 /* Date_timestamp.swift in Sources */,
 				D150CBCD1E4D692E000391BC /* DataProvider.swift in Sources */,
 				D150CBA21E4D50EB000391BC /* PayTM_1.xcdatamodeld in Sources */,
 				D1FE010E1E4E245F004479D8 /* DataModel.swift in Sources */,
+				D12E24181E52C566001B1193 /* String_currency.swift in Sources */,
 				D1FE010C1E4E18EA004479D8 /* NetworkStack.swift in Sources */,
 				D1FE010A1E4E0E02004479D8 /* RateCell.swift in Sources */,
 			);

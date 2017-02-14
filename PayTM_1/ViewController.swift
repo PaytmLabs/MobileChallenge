@@ -9,7 +9,7 @@
 import UIKit
 
 class ViewController: UIViewController, UICollectionViewDataSource {
-
+   
     @IBOutlet weak var lblTimestamp: UILabel!
     @IBOutlet weak var btnCurrency: UIButton!
     @IBOutlet weak var fldInput: UITextField!
@@ -20,15 +20,17 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     override func viewDidLoad() {
         super.viewDidLoad()
         self.updateUI()
-        self.addPadToolbarButtons()
+        self.fldInput.addKeyboardButtons()
+        self.fldInput.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
+  
         // Do any additional setup after loading the view, typically from a nib.
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onDatalUpdate), name: Notifications.notificationDataUpdated(), object: nil)
     }
 
     
     func updateUI() {
-        self.lblTimestamp.text = dataProvider.getLastServerResponse()?.timestamp ?? "no data yet..."
-        self.btnCurrency.setTitle(self.dataProvider.currency(forRow:0)+" 🔽",for: .normal)
+        self.lblTimestamp.text = dataProvider.getLastServerResponse()?.timestamp ?? "no data loaded yet..."
+        self.btnCurrency.setTitle(self.dataProvider.currency(forRow:self.dataProvider.baseCurrencyIndex())+" 🔽",for: .normal)
     }
     
     func onDatalUpdate () {
@@ -37,18 +39,6 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         self.collectionView.reloadData()
     }
     
-    func addPadToolbarButtons() {
-        
-        let numberPadToolbar = UIToolbar(frame: CGRect(x:0,y:0,width:self.view.bounds.size.width,height:44))
-        numberPadToolbar.barTintColor = #colorLiteral(red: 0.9607843137, green: 0.9607843137, blue: 0.9607843137, alpha: 1)
-        
-        numberPadToolbar.items = [
-            UIBarButtonItem(title: "Hide", style: UIBarButtonItemStyle.done, target: self.fldInput, action: #selector(resignFirstResponder))
-        ]
-        
-        self.fldInput.inputAccessoryView = numberPadToolbar
-    }
-
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
@@ -58,7 +48,6 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        DataProvider.shared.updateData()
     }
     
     
@@ -79,6 +68,34 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         return cell
     }
 
+    //MARK: - IBActions
+    
+    
+    @IBAction func btnTapped(_ sender: UIButton) {
+    
+        let alert = UIAlertController(title: "Currency list", message: "Select base currency", preferredStyle: .actionSheet)
 
+        for i in 0 ..< self.dataProvider.numberOfCurrencies() {
+            let  action = UIAlertAction(title: self.dataProvider.currency(forRow: i), style: .default, handler: { (action) -> Void in
+
+                self.dataProvider.setBaseCurrency(atIndex:i)
+                self.updateUI()
+                self.collectionView.reloadData()
+            
+            })
+            alert.addAction(action)
+        }
+        
+        self.present(alert, animated: true, completion: nil)
+
+    }
+    
+    func textFieldChanged(textField:UITextField) {
+
+        let value = Double(textField.text!)
+        self.dataProvider.setBaseCurencyInputValue(atValue: value)
+        
+        NotificationCenter.default.post(name: Notifications.notificationInputUpdated(), object: nil)
+    }
 }
 

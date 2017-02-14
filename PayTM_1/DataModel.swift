@@ -15,8 +15,8 @@ class DataModel {
     var rates: [String: Double] = baseCurrency
     var currencies: [String] = Array(baseCurrency.keys)
 
-    var inputValue: Double = 0
-    var inputCurrency: Int = 0
+    var baseCurencyInputValue: Double = 0
+    var baseCurrencyIndex: Int = 0
 
     
     func update(data: Data) {
@@ -32,4 +32,17 @@ class DataModel {
             print("error in JSONSerialization")
         }
     }
+    
+    func conversionValue(forRow:Int)->Double {
+        
+        let currency = currencies[baseCurrencyIndex]
+        let toEuro = Double(self.rates[currency]!)
+        let rate = Double(self.rates[currencies[forRow]]!)
+        return baseCurencyInputValue / toEuro * rate
+        
+//        let toEuroKey: String = self.rates[self.currencies[baseCurrencyIndex]]
+//        let value = baseCurencyInputValue * Double(self.rates[toEuroKey])
+//        return 0 // value / Double(self.rates[baseCurencyInputValue])
+    }
+    
 }

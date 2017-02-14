@@ -35,7 +35,7 @@ class RateCell: UICollectionViewCell {
     
     
     func update() {
-        self.lblRate.text = String(atIndex)
+        self.lblRate.text =  self.dataProvider?.conversionValue(forRow: atIndex) //  String(atIndex)
         self.lblCurrency.text = self.dataProvider?.currency(forRow:atIndex)
     }
     

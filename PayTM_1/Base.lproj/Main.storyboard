@@ -38,6 +38,9 @@
                                     <constraint firstAttribute="height" constant="35" id="QRV-72-jTo"/>
                                 </constraints>
                                 <state key="normal" title="Button 🔽"/>
+                                <connections>
+                                    <action selector="btnTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4o9-qj-ydL"/>
+                                </connections>
                             </button>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="MIV-8L-kfZ">
                                 <rect key="frame" x="16" y="110" width="343" height="557"/>

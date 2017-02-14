@@ -12,6 +12,7 @@ import CoreData
 class DataProvider {
     
     static let shared = DataProvider()
+    private let kMaxOfflineTime:TimeInterval = 60 * 30 // half an hour
     
     lazy var entityName = String(describing: ServerResponse.self)
     lazy var dataModel = DataModel()
@@ -44,37 +45,37 @@ class DataProvider {
     
     func updateData() {
         
-        //TPDO  update also 1-stamp label, 2-button,  3-cells.
-        
-        
         self.lastServerResponse = self.getLastServerResponse()
         if (self.lastServerResponse != nil) {
             self.dataModel.update(data: self.lastServerResponse?.data as! Data)
             NotificationCenter.default.post(name: self.notificationName, object: nil)
         }
         
-        
         let completion: (Data?) -> Void = { data in
 
             CoreDataStack.shared.performForegroundTask({ context in
 
                 self.dataModel.update(data: data!)
-                NotificationCenter.default.post(name: self.notificationName, object: nil)
-                NotificationCenter.default.post(name: Notifications.notificationInputUpdated(), object: nil)
 
-                guard let response = self.getLastServerResponse()
-                    else {
-                        let serverResponse: ServerResponse = NSEntityDescription.insertNewObject(forEntityName: self.entityName, into:context) as! ServerResponse
-                        serverResponse.timestamp = Date().description
-                        serverResponse.data = data as NSData?
-                        return
+                var response = self.getLastServerResponse()
+                if (response == nil) {
+                    response = NSEntityDescription.insertNewObject(forEntityName: self.entityName, into:context) as? ServerResponse
                 }
-                response.timestamp = Date().description
-                response.data = data as NSData?
+                response?.timestamp = Date().description
+                response?.data = data as NSData?
+                CoreDataStack.shared.saveContext()
+
+                NotificationCenter.default.post(name: self.notificationName, object: nil)
             })
         }
         
-        NetworkStack.downloadRates(completionHandler: completion)
+        var timeDiff = kMaxOfflineTime
+        if (self.lastServerResponse != nil) {
+            timeDiff = Date().timeIntervalSince(Date.from(description: (self.lastServerResponse?.timestamp)!))
+        }
+            if (timeDiff >= kMaxOfflineTime) {
+            NetworkStack.downloadRates(completionHandler: completion)
+        }
     }
     
 }
@@ -92,10 +93,23 @@ extension DataProvider { // collection view + conversion value calc
     }
     
     func conversionValue(forRow:Int)->String {
-        return "I am converted Value"
+        return  String(self.dataModel.conversionValue(forRow:forRow)).asCurrency()
     }
     
-    // set current input value and currence + pass it to the model
+    func baseCurrencyIndex() ->Int {
+        return dataModel.baseCurrencyIndex
+    }
+    
+    func setBaseCurrency(atIndex: Int) {
+        self.dataModel.baseCurrencyIndex = atIndex
+    }
+
+    func setBaseCurencyInputValue(atValue: Double?) {
+        guard let atValue = atValue else {
+            return
+        }
+        self.dataModel.baseCurencyInputValue = atValue
+    }
     
 }
 
