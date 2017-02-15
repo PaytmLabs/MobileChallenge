@@ -39,10 +39,6 @@ class DataModel {
         let toEuro = Double(self.rates[currency]!)
         let rate = Double(self.rates[currencies[forRow]]!)
         return baseCurencyInputValue / toEuro * rate
-        
-//        let toEuroKey: String = self.rates[self.currencies[baseCurrencyIndex]]
-//        let value = baseCurencyInputValue * Double(self.rates[toEuroKey])
-//        return 0 // value / Double(self.rates[baseCurencyInputValue])
     }
     
 }

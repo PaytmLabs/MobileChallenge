@@ -93,8 +93,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
     func textFieldChanged(textField:UITextField) {
 
         let value = Double(textField.text!)
-        self.dataProvider.setBaseCurencyInputValue(atValue: value)
-        
+        self.dataProvider.setBaseCurencyInputValue(atValue: value)        
         NotificationCenter.default.post(name: Notifications.notificationInputUpdated(), object: nil)
     }
 }
