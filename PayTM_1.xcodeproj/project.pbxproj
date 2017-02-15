@@ -79,7 +79,7 @@
 		D1FE01091E4E0E02004479D8 /* RateCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RateCell.swift; sourceTree = "<group>"; };
 		D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkStack.swift; sourceTree = "<group>"; };
 		D1FE010D1E4E245F004479D8 /* DataModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
-		D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MockNetworkStack.swift; sourceTree = "<group>"; };
+		D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = MockNetworkStack.swift; path = ../PayTM_1/MockNetworkStack.swift; sourceTree = "<group>"; };
 		D1FE01111E4EBC78004479D8 /* Notifications.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Notifications.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -136,7 +136,6 @@
 				D1FE01111E4EBC78004479D8 /* Notifications.swift */,
 				D150CBCE1E4D7011000391BC /* CoreDataStack.swift */,
 				D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */,
-				D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */,
 				D150CB991E4D50EB000391BC /* AppDelegate.swift */,
 				D1FE01091E4E0E02004479D8 /* RateCell.swift */,
 				D150CB9B1E4D50EB000391BC /* ViewController.swift */,
@@ -153,6 +152,7 @@
 		D150CBB01E4D50EC000391BC /* PayTM_1Tests */ = {
 			isa = PBXGroup;
 			children = (
+				D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */,
 				D150CBB11E4D50EC000391BC /* PayTM_1Tests.swift */,
 				D150CBB31E4D50EC000391BC /* Info.plist */,
 			);

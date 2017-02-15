@@ -24,7 +24,7 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         self.fldInput.addTarget(self, action: #selector(textFieldChanged), for: .editingChanged)
   
         // Do any additional setup after loading the view, typically from a nib.
-        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onDatalUpdate), name: Notifications.notificationDataUpdated(), object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onDataUpdate), name: Notifications.notificationDataUpdated(), object: nil)
     }
 
     
@@ -33,23 +33,14 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         self.btnCurrency.setTitle(self.dataProvider.currency(forRow:self.dataProvider.baseCurrencyIndex())+" 🔽",for: .normal)
     }
     
-    func onDatalUpdate () {
+    func onDataUpdate () {
         // update UI
         self.updateUI()
         self.collectionView.reloadData()
     }
     
     
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
-    
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
-    }
-    
+    // MARK: - Collection DS
     
     func collectionView(_ collectionView: UICollectionView,
                         numberOfItemsInSection section: Int) -> Int {

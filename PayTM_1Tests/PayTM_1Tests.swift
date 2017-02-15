@@ -42,7 +42,7 @@ class PayTM_1Tests: XCTestCase {
     }
     
     func testDataProvider() {
-        // dependancy ejection
+        // dependancy injection
         let dataProvider = DataProvider()
         dataProvider.networkStack = MockNetworkStack()
         dataProvider.coreDataStack = nil

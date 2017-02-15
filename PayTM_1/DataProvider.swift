@@ -18,6 +18,7 @@ class DataProvider {
     lazy var dataModel = DataModel()
     let notificationName = Notifications.notificationDataUpdated()
 
+    // Dependency Injection
     var networkStack: NetworkStackProtocol = NetworkStack()
     var coreDataStack: CoreDataStack? = CoreDataStack.shared
     

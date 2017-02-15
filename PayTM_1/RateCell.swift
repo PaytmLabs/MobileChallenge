@@ -18,11 +18,7 @@ class RateCell: UICollectionViewCell {
     weak var dataProvider: DataProvider?
     var atIndex: Int = 0
     
-//    override init(frame: CGRect) {
-//        super.init(frame:frame)
-////        NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onCellUpdate), name: self.dataProvider.notificationName, object: nil)
-//    }
-    
+
     required init?(coder aDecoder: NSCoder) {
         super.init(coder:aDecoder)
         NotificationCenter.default.addObserver(self, selector: #selector(RateCell.onCellUpdate), name: Notifications.notificationInputUpdated(), object: nil)

@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PayTM_1/ViewController.swift"
-            timestampString = "508740430.818107"
+            timestampString = "508835749.889271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "54"
-            endingLineNumber = "54"
+            startingLineNumber = "45"
+            endingLineNumber = "45"
             landmarkName = "collectionView(_:numberOfItemsInSection:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -31,7 +31,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "39"
             endingLineNumber = "39"
-            landmarkName = "onDatalUpdate()"
+            landmarkName = "onDataUpdate()"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
@@ -42,11 +42,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "PayTM_1/RateCell.swift"
-            timestampString = "508508153.052094"
+            timestampString = "508835749.889271"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "31"
-            endingLineNumber = "31"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
             landmarkName = "RateCell"
             landmarkType = "3">
          </BreakpointContent>
