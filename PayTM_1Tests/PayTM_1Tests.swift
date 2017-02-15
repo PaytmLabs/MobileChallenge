@@ -7,6 +7,7 @@
 //
 
 import XCTest
+
 @testable import PayTM_1
 
 class PayTM_1Tests: XCTestCase {
@@ -33,4 +34,21 @@ class PayTM_1Tests: XCTestCase {
         }
     }
     
+    func testDateExtension() {
+        let date1 = Date()
+        let date2 = Date.from(description: date1.description)
+        let timeDiff = date1.timeIntervalSince(date2)
+        XCTAssert(timeDiff < 1, "Date description decoding fails.")
+    }
+    
+    func testDataProvider() {
+        // dependancy ejection
+        let dataProvider = DataProvider()
+        dataProvider.networkStack = MockNetworkStack()
+        dataProvider.coreDataStack = nil
+        dataProvider.updateData()
+        let totalCurrencies = dataProvider.numberOfCurrencies()
+        XCTAssert( totalCurrencies == 32, "Data provider fails.")
+    }
+
 }

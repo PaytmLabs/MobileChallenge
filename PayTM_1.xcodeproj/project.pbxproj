@@ -19,11 +19,23 @@
 		D150CBBD1E4D50EC000391BC /* PayTM_1UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBBC1E4D50EC000391BC /* PayTM_1UITests.swift */; };
 		D150CBCD1E4D692E000391BC /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBCC1E4D692E000391BC /* DataProvider.swift */; };
 		D150CBCF1E4D7011000391BC /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBCE1E4D7011000391BC /* CoreDataStack.swift */; };
+		D159CAAE1E541A50008EF45F /* MockNetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */; };
+		D159CAAF1E541CFE008EF45F /* DataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBCC1E4D692E000391BC /* DataProvider.swift */; };
+		D159CAB01E541D75008EF45F /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010D1E4E245F004479D8 /* DataModel.swift */; };
+		D159CAB11E541D7B008EF45F /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE01111E4EBC78004479D8 /* Notifications.swift */; };
+		D159CAB21E541D7F008EF45F /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CBCE1E4D7011000391BC /* CoreDataStack.swift */; };
+		D159CAB31E541D86008EF45F /* PayTM_1.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D150CBA01E4D50EB000391BC /* PayTM_1.xcdatamodeld */; };
+		D159CAB41E541D90008EF45F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D150CB9D1E4D50EB000391BC /* Main.storyboard */; };
+		D159CAB51E541D93008EF45F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D150CB9B1E4D50EB000391BC /* ViewController.swift */; };
+		D159CAB61E541D96008EF45F /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE01091E4E0E02004479D8 /* RateCell.swift */; };
+		D159CAB81E541E27008EF45F /* NetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */; };
+		D159CAB91E541E52008EF45F /* String_currency.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12E24171E52C566001B1193 /* String_currency.swift */; };
+		D159CABA1E541E5B008EF45F /* UITextField_Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E546E1E52939600D7401E /* UITextField_Keyboard.swift */; };
+		D159CABB1E541E60008EF45F /* Date_timestamp.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12E24191E52C585001B1193 /* Date_timestamp.swift */; };
 		D16E546F1E52939600D7401E /* UITextField_Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16E546E1E52939600D7401E /* UITextField_Keyboard.swift */; };
 		D1FE010A1E4E0E02004479D8 /* RateCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE01091E4E0E02004479D8 /* RateCell.swift */; };
 		D1FE010C1E4E18EA004479D8 /* NetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010B1E4E18EA004479D8 /* NetworkStack.swift */; };
 		D1FE010E1E4E245F004479D8 /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010D1E4E245F004479D8 /* DataModel.swift */; };
-		D1FE01101E4E436B004479D8 /* MockNetworkStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE010F1E4E436B004479D8 /* MockNetworkStack.swift */; };
 		D1FE01121E4EBC78004479D8 /* Notifications.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FE01111E4EBC78004479D8 /* Notifications.swift */; };
 /* End PBXBuildFile section */
 
@@ -286,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D159CAB41E541D90008EF45F /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,7 +320,6 @@
 				D16E546F1E52939600D7401E /* UITextField_Keyboard.swift in Sources */,
 				D150CBCF1E4D7011000391BC /* CoreDataStack.swift in Sources */,
 				D150CB9C1E4D50EB000391BC /* ViewController.swift in Sources */,
-				D1FE01101E4E436B004479D8 /* MockNetworkStack.swift in Sources */,
 				D150CB9A1E4D50EB000391BC /* AppDelegate.swift in Sources */,
 				D12E241A1E52C585001B1193 /* Date_timestamp.swift in Sources */,
 				D150CBCD1E4D692E000391BC /* DataProvider.swift in Sources */,
@@ -323,7 +335,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D159CAB21E541D7F008EF45F /* CoreDataStack.swift in Sources */,
+				D159CAB81E541E27008EF45F /* NetworkStack.swift in Sources */,
+				D159CAB61E541D96008EF45F /* RateCell.swift in Sources */,
+				D159CAB11E541D7B008EF45F /* Notifications.swift in Sources */,
+				D159CABA1E541E5B008EF45F /* UITextField_Keyboard.swift in Sources */,
+				D159CAB91E541E52008EF45F /* String_currency.swift in Sources */,
+				D159CABB1E541E60008EF45F /* Date_timestamp.swift in Sources */,
+				D159CAB01E541D75008EF45F /* DataModel.swift in Sources */,
+				D159CAB51E541D93008EF45F /* ViewController.swift in Sources */,
 				D150CBB21E4D50EC000391BC /* PayTM_1Tests.swift in Sources */,
+				D159CAAF1E541CFE008EF45F /* DataProvider.swift in Sources */,
+				D159CAAE1E541A50008EF45F /* MockNetworkStack.swift in Sources */,
+				D159CAB31E541D86008EF45F /* PayTM_1.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

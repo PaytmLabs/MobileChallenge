@@ -18,6 +18,9 @@ class DataProvider {
     lazy var dataModel = DataModel()
     let notificationName = Notifications.notificationDataUpdated()
 
+    var networkStack: NetworkStackProtocol = NetworkStack()
+    var coreDataStack: CoreDataStack? = CoreDataStack.shared
+    
     private var lastServerResponse: ServerResponse?
     func getLastServerResponse ()-> ServerResponse? {
     
@@ -27,7 +30,7 @@ class DataProvider {
         
         let fetchRequest = NSFetchRequest<NSFetchRequestResult>(entityName: self.entityName)
         do {
-            let records = try CoreDataStack.shared.viewContext.fetch(fetchRequest)
+            let records = try coreDataStack?.viewContext.fetch(fetchRequest)
             if let records = records as? [NSManagedObject] {
                 if (records.count > 0) {
                     self.lastServerResponse = records[0] as? ServerResponse
@@ -53,20 +56,22 @@ class DataProvider {
         
         let completion: (Data?) -> Void = { data in
 
-            CoreDataStack.shared.performForegroundTask({ context in
+            self.dataModel.update(data: data!)
 
-                self.dataModel.update(data: data!)
+            if (self.coreDataStack != nil) {
+                self.coreDataStack!.performForegroundTask({ context in
 
-                var response = self.getLastServerResponse()
-                if (response == nil) {
-                    response = NSEntityDescription.insertNewObject(forEntityName: self.entityName, into:context) as? ServerResponse
-                }
-                response?.timestamp = Date().description
-                response?.data = data as NSData?
-                CoreDataStack.shared.saveContext()
+                    var response = self.getLastServerResponse()
+                    if (response == nil) {
+                        response = NSEntityDescription.insertNewObject(forEntityName: self.entityName, into:context) as? ServerResponse
+                    }
+                    response?.timestamp = Date().description
+                    response?.data = data as NSData?
+                    self.coreDataStack?.saveContext()
 
-                NotificationCenter.default.post(name: self.notificationName, object: nil)
-            })
+                    NotificationCenter.default.post(name: self.notificationName, object: nil)
+                })
+            }
         }
         
         var timeDiff = kMaxOfflineTime
@@ -74,7 +79,7 @@ class DataProvider {
             timeDiff = Date().timeIntervalSince(Date.from(description: (self.lastServerResponse?.timestamp)!))
         }
             if (timeDiff >= kMaxOfflineTime) {
-            NetworkStack.downloadRates(completionHandler: completion)
+            networkStack.downloadRates(completionHandler: completion)
         }
     }
     

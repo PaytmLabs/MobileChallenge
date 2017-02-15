@@ -8,9 +8,14 @@
 
 import Foundation
 
-class NetworkStack {
 
-    class func downloadRates(completionHandler: @escaping (Data?) ->Void) {
+protocol NetworkStackProtocol {
+    func downloadRates(completionHandler: @escaping (Data?) ->Void)
+}
+
+class NetworkStack: NetworkStackProtocol {
+
+    func downloadRates(completionHandler: @escaping (Data?) ->Void) {
         
         let config = URLSessionConfiguration.default
         let session = URLSession(configuration: config)
