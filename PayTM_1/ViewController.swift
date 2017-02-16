@@ -27,6 +27,11 @@ class ViewController: UIViewController, UICollectionViewDataSource {
         NotificationCenter.default.addObserver(self, selector: #selector(ViewController.onDataUpdate), name: Notifications.notificationDataUpdated(), object: nil)
     }
 
+ 
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
     
     func updateUI() {
         self.lblTimestamp.text = dataProvider.getLastServerResponse()?.timestamp ?? "no data loaded yet..."

@@ -24,7 +24,12 @@ class RateCell: UICollectionViewCell {
         NotificationCenter.default.addObserver(self, selector: #selector(RateCell.onCellUpdate), name: Notifications.notificationInputUpdated(), object: nil)
     }
 
-
+ 
+    deinit {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    
     func onCellUpdate(notification:Notification) -> Void {
         self.update()
     }
