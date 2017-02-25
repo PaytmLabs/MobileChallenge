@@ -24,7 +24,11 @@ class DataModel {
         do {
             let json = try JSONSerialization.jsonObject(with: data, options: .allowFragments) as? [String: Any]
 
-            self.rates = json!["rates"] as! [String : Double]
+            guard let freshRates = json?["rates"] as? [String : Double] else {
+                return
+            }
+            
+            self.rates = freshRates
             self.rates[Array(baseCurrency.keys)[0]] = 1.0
             self.currencies = Array(self.rates.keys).sorted()
  
