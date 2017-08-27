@@ -1,4 +1,4 @@
-package net.ronakp.mobilechallenge.module;
+package net.ronakp.mobilechallenge.dagger.module;
 
 import android.content.Context;
 

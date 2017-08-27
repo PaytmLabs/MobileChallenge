@@ -1,8 +1,8 @@
-package net.ronakp.mobilechallenge.component;
+package net.ronakp.mobilechallenge.dagger.component;
 
 import net.ronakp.mobilechallenge.activity.MainActivity;
-import net.ronakp.mobilechallenge.module.AppModule;
-import net.ronakp.mobilechallenge.module.FixerModule;
+import net.ronakp.mobilechallenge.dagger.module.AppModule;
+import net.ronakp.mobilechallenge.dagger.module.FixerModule;
 
 import javax.inject.Singleton;
 

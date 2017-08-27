@@ -1,7 +1,11 @@
-package net.ronakp.mobilechallenge.module;
+package net.ronakp.mobilechallenge.dagger.module;
 
 import android.app.Application;
 import android.content.Context;
+
+import com.google.gson.FieldNamingPolicy;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
 
 import javax.inject.Singleton;
 
@@ -16,16 +20,16 @@ import okhttp3.OkHttpClient;
 
 @Module
 public class AppModule {
-    private Context context;
+    private Application application;
 
-    public AppModule(Context context) {
-        this.context = context;
+    public AppModule(Application application) {
+        this.application = application;
     }
 
     @Provides
     @Singleton
-    Context providesAppContext() {
-        return context;
+    Context providesApplication() {
+        return application;
     }
 
     @Provides
