@@ -6,6 +6,7 @@ import android.support.multidex.MultiDex;
 
 import net.ronakp.mobilechallenge.component.AppComponent;
 import net.ronakp.mobilechallenge.component.DaggerAppComponent;
+import net.ronakp.mobilechallenge.module.AppModule;
 import net.ronakp.mobilechallenge.module.FixerModule;
 
 /**
@@ -25,6 +26,7 @@ public class AppApplication extends Application {
 
         appComponent = DaggerAppComponent.builder()
                 .fixerModule(new FixerModule())
+                .appModule(new AppModule(getApplicationContext()))
                 .build();
     }
 

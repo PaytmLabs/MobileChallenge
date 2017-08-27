@@ -1,6 +1,7 @@
 package net.ronakp.mobilechallenge.component;
 
 import net.ronakp.mobilechallenge.activity.MainActivity;
+import net.ronakp.mobilechallenge.module.AppModule;
 import net.ronakp.mobilechallenge.module.FixerModule;
 
 import javax.inject.Singleton;
@@ -12,7 +13,7 @@ import dagger.Component;
  */
 
 @Singleton
-@Component(modules = {FixerModule.class})
+@Component(modules = {AppModule.class, FixerModule.class})
 public interface AppComponent {
     void inject(MainActivity mainActivity);
 }
