@@ -1,4 +1,4 @@
-package net.ronakp.mobilechallenge.dagger.module;
+package net.ronakp.mobilechallenge.module;
 
 import android.content.Context;
 
@@ -18,10 +18,7 @@ import retrofit2.converter.gson.GsonConverterFactory;
  * Created by ronak on 2017-08-26.
  */
 
-@Module
 public class FixerModule {
-    @Provides
-    @Singleton
     FixerService fixerService(OkHttpClient okHttpClient, Context context) {
         return new Retrofit.Builder()
                 .baseUrl(context.getString(R.string.url))

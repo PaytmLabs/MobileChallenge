@@ -2,7 +2,7 @@ package net.ronakp.mobilechallenge.service;
 
 import net.ronakp.mobilechallenge.model.FixerResponse;
 
-import io.reactivex.Single;
+import retrofit2.Call;
 import retrofit2.http.GET;
 
 /**
@@ -11,5 +11,5 @@ import retrofit2.http.GET;
 
 public interface FixerService {
     @GET("latest")
-    Single<FixerResponse> getLatestRates();
+    Call<FixerResponse> getLatestRates();
 }

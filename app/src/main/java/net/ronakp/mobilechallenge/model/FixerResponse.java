@@ -1,16 +1,24 @@
 package net.ronakp.mobilechallenge.model;
 
-import java.util.Date;
-import java.util.Map;
+import com.google.gson.annotations.Expose;
+import com.google.gson.annotations.SerializedName;
 
 /**
  * Created by ronak on 2017-08-26.
  */
 
 public class FixerResponse {
-    String base;
-    Date date;
-    Map<String, String> rates;
+    @SerializedName("base")
+    @Expose
+    private String base;
+
+    @SerializedName("date")
+    @Expose
+    private String date;
+
+    @SerializedName("rates")
+    @Expose
+    private Rates rates;
 
     public String getBase() {
         return base;
@@ -20,19 +28,19 @@ public class FixerResponse {
         this.base = base;
     }
 
-    public Date getDate() {
+    public String getDate() {
         return date;
     }
 
-    public void setDate(Date date) {
+    public void setDate(String date) {
         this.date = date;
     }
 
-    public Map<String, String> getRates() {
+    public Rates getRates() {
         return rates;
     }
 
-    public void setRates(Map<String, String> rates) {
+    public void setRates(Rates rates) {
         this.rates = rates;
     }
 }
