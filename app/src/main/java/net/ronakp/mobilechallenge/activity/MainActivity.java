@@ -32,15 +32,19 @@ public class MainActivity extends AppCompatActivity {
 
         fixerService = FixerHelperModule.getFixerService();
 
+        callRates();
+    }
+
+    public void callRates() {
         fixerService.getLatestRates().enqueue(new Callback<FixerResponse>() {
             @Override
             public void onResponse(Call<FixerResponse> call, Response<FixerResponse> response) {
-                Log.d("hello", "post submitted to API." + response.body().getRates().getAUD());
+                Log.d("Fixer Success : ", response.body().toString());
             }
 
             @Override
             public void onFailure(Call<FixerResponse> call, Throwable t) {
-
+                Log.e("Fixer Error : ", t.toString());
             }
         });
     }

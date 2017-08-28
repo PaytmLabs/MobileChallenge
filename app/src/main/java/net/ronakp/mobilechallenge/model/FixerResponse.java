@@ -3,6 +3,8 @@ package net.ronakp.mobilechallenge.model;
 import com.google.gson.annotations.Expose;
 import com.google.gson.annotations.SerializedName;
 
+import java.util.List;
+
 /**
  * Created by ronak on 2017-08-26.
  */
