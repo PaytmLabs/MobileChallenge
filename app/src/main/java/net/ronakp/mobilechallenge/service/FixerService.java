@@ -2,6 +2,7 @@ package net.ronakp.mobilechallenge.service;
 
 import net.ronakp.mobilechallenge.model.FixerResponse;
 
+import io.reactivex.Observable;
 import retrofit2.Call;
 import retrofit2.http.GET;
 

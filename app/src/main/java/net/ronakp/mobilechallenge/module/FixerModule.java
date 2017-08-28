@@ -1,11 +1,7 @@
 package net.ronakp.mobilechallenge.module;
 
-import android.content.Context;
-
-import net.ronakp.mobilechallenge.R;
-import net.ronakp.mobilechallenge.service.FixerService;
-
 import retrofit2.Retrofit;
+import retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
 import retrofit2.converter.gson.GsonConverterFactory;
 
 /**
