@@ -2,7 +2,7 @@
 
 ## Goal:
 
-#### Develop a currency conversion app that allows a user to convert an input value by any of the supplied rates.
+#### Develop a currency conversion app that allows a user to convert an input value by any of the supplied rates .
 
 - [ ] Fork this repo. Keep it public until we have been able to review it.
 - [ ] Android: _Java/Kotlin_ | iOS: _Swift_
