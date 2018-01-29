@@ -9,8 +9,6 @@
 import Foundation
 import UIKit
 
-let imageCache = NSCache<NSString, UIImage>()
-
 protocol Reusable: class {
     static var identifier: String { get }
 }

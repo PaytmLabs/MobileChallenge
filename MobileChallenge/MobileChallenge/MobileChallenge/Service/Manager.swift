@@ -18,8 +18,7 @@ class currencyConverter {
     //
     
     func getRequestValues(completion: @escaping (String, String, NSDictionary) -> ()) {
-        let todoEndpoint: String = "https://api.fixer.io/latest"
-        Alamofire.request(todoEndpoint, method: .get).responseJSON { response in
+        Alamofire.request(GlobalConstants.Constants.apiEndpoint, method: .get).responseJSON { response in
             let result = JSON(response.result.value ?? "")
             let base = result["base"].stringValue
             let date = result["date"].stringValue

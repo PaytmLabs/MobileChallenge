@@ -67,7 +67,7 @@ class ViewController: UIViewController, UITabBarDelegate, UITableViewDataSource 
     //
     
     func startTimer() {
-        let queue = DispatchQueue(label: "com.domain.app.timer")
+        let queue = DispatchQueue(label: GlobalConstants.Constants.timeerDispatchKey)
         timer = DispatchSource.makeTimerSource(queue: queue)
         timer?.schedule(deadline: .now(), repeating: .seconds(1800))
         timer?.setEventHandler { [weak self] in
@@ -86,12 +86,12 @@ class ViewController: UIViewController, UITabBarDelegate, UITableViewDataSource 
 
     func setCurrecncyValues() {
         selectFromCurrencyDropDown.anchorView = selectFromCurrency
-        selectFromCurrencyDropDown.width = 94
+        selectFromCurrencyDropDown.width = CGFloat(GlobalConstants.Constants.dropDownButtonWidth)
         selectFromCurrencyDropDown.bottomOffset = CGPoint(x: 0, y: (selectFromCurrencyDropDown.anchorView?.plainView.bounds.height)! - 1)
         selectFromCurrencyDropDown.dataSource = GlobalConstants.Constants.currencyData
         
         selectToCurrencyDropDown.anchorView = selectToCurrency
-        selectToCurrencyDropDown.width = 94
+        selectToCurrencyDropDown.width = CGFloat(GlobalConstants.Constants.dropDownButtonWidth)
         selectToCurrencyDropDown.bottomOffset = CGPoint(x: 0, y: (selectToCurrencyDropDown.anchorView?.plainView.bounds.height)! - 1)
         selectToCurrencyDropDown.dataSource = GlobalConstants.Constants.currencyData
     }
@@ -116,15 +116,16 @@ class ViewController: UIViewController, UITabBarDelegate, UITableViewDataSource 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: ConvertedCurrencyCell.identifier, for: indexPath)
             as! ConvertedCurrencyCell
+        
         cell.currencyInfo = convertedValues[indexPath.row]
         return cell
     }
     
     func presentAlertForError (message: String) {
-        let alertController = UIAlertController(title: "Currency Conveter",
+        let alertController = UIAlertController(title: GlobalConstants.Constants.errorTtile,
                                                 message: message,
                                                 preferredStyle: UIAlertControllerStyle.alert)
-        alertController.addAction(UIAlertAction(title: "Dismiss", style: UIAlertActionStyle.default, handler: nil))
+        alertController.addAction(UIAlertAction(title: GlobalConstants.Constants.dimissErrorTitle, style: UIAlertActionStyle.default, handler: nil))
         self.present(alertController, animated: true, completion: nil)
     }
     

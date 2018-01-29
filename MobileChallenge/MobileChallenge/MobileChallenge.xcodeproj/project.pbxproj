@@ -162,10 +162,17 @@
 			isa = PBXGroup;
 			children = (
 				469BA758201D460900F7FC60 /* CurrencyModel.swift */,
-				469BA75B201D7E4D00F7FC60 /* GlobalConstants.swift */,
 				469BA75D201E831B00F7FC60 /* ConvertedCurrencyModel.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		469BA75F201EC80B00F7FC60 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				469BA75B201D7E4D00F7FC60 /* GlobalConstants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		469FAA04201CF9C00068F903 = {
@@ -193,6 +200,7 @@
 		469FAA0F201CF9C00068F903 /* MobileChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				469BA75F201EC80B00F7FC60 /* Constants */,
 				469BA757201D45E700F7FC60 /* Model */,
 				469BA754201D3D5F00F7FC60 /* Extension */,
 				469BA74F201D16B300F7FC60 /* Service */,
