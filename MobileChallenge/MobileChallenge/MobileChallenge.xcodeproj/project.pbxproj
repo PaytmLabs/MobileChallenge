@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		469BA751201D16CF00F7FC60 /* Manager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA750201D16CF00F7FC60 /* Manager.swift */; };
+		469BA753201D3D4600F7FC60 /* ConvertedCurrencyCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA752201D3D4600F7FC60 /* ConvertedCurrencyCell.swift */; };
+		469BA756201D3DA000F7FC60 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA755201D3DA000F7FC60 /* Extensions.swift */; };
+		469BA759201D460900F7FC60 /* CurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA758201D460900F7FC60 /* CurrencyModel.swift */; };
+		469BA75C201D7E4D00F7FC60 /* GlobalConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA75B201D7E4D00F7FC60 /* GlobalConstants.swift */; };
+		469BA75E201E831B00F7FC60 /* ConvertedCurrencyModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469BA75D201E831B00F7FC60 /* ConvertedCurrencyModel.swift */; };
 		469FAA11201CF9C10068F903 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469FAA10201CF9C10068F903 /* AppDelegate.swift */; };
 		469FAA13201CF9C10068F903 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 469FAA12201CF9C10068F903 /* ViewController.swift */; };
 		469FAA16201CF9C10068F903 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 469FAA14201CF9C10068F903 /* Main.storyboard */; };
@@ -39,6 +45,12 @@
 
 /* Begin PBXFileReference section */
 		1AF27DF8EFCFC002CF4BBA2D /* Pods-MobileChallengeUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MobileChallengeUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-MobileChallengeUITests/Pods-MobileChallengeUITests.release.xcconfig"; sourceTree = "<group>"; };
+		469BA750201D16CF00F7FC60 /* Manager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Manager.swift; sourceTree = "<group>"; };
+		469BA752201D3D4600F7FC60 /* ConvertedCurrencyCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertedCurrencyCell.swift; sourceTree = "<group>"; };
+		469BA755201D3DA000F7FC60 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		469BA758201D460900F7FC60 /* CurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyModel.swift; sourceTree = "<group>"; };
+		469BA75B201D7E4D00F7FC60 /* GlobalConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalConstants.swift; sourceTree = "<group>"; };
+		469BA75D201E831B00F7FC60 /* ConvertedCurrencyModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConvertedCurrencyModel.swift; sourceTree = "<group>"; };
 		469FAA0D201CF9C00068F903 /* MobileChallenge.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MobileChallenge.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		469FAA10201CF9C10068F903 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		469FAA12201CF9C10068F903 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +126,48 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		469BA74D201D167400F7FC60 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				469FAA12201CF9C10068F903 /* ViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		469BA74E201D167F00F7FC60 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				469BA752201D3D4600F7FC60 /* ConvertedCurrencyCell.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		469BA74F201D16B300F7FC60 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				469BA750201D16CF00F7FC60 /* Manager.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		469BA754201D3D5F00F7FC60 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				469BA755201D3DA000F7FC60 /* Extensions.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		469BA757201D45E700F7FC60 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				469BA758201D460900F7FC60 /* CurrencyModel.swift */,
+				469BA75B201D7E4D00F7FC60 /* GlobalConstants.swift */,
+				469BA75D201E831B00F7FC60 /* ConvertedCurrencyModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
 		469FAA04201CF9C00068F903 = {
 			isa = PBXGroup;
 			children = (
@@ -139,8 +193,12 @@
 		469FAA0F201CF9C00068F903 /* MobileChallenge */ = {
 			isa = PBXGroup;
 			children = (
+				469BA757201D45E700F7FC60 /* Model */,
+				469BA754201D3D5F00F7FC60 /* Extension */,
+				469BA74F201D16B300F7FC60 /* Service */,
+				469BA74E201D167F00F7FC60 /* views */,
+				469BA74D201D167400F7FC60 /* Controllers */,
 				469FAA10201CF9C10068F903 /* AppDelegate.swift */,
-				469FAA12201CF9C10068F903 /* ViewController.swift */,
 				469FAA14201CF9C10068F903 /* Main.storyboard */,
 				469FAA1A201CF9C10068F903 /* Assets.xcassets */,
 				469FAA1C201CF9C10068F903 /* LaunchScreen.storyboard */,
@@ -315,10 +373,14 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-MobileChallenge/Pods-MobileChallenge-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/DropDown/DropDown.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/DropDown.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -462,8 +524,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				469FAA19201CF9C10068F903 /* MobileChallenge.xcdatamodeld in Sources */,
+				469BA756201D3DA000F7FC60 /* Extensions.swift in Sources */,
+				469BA753201D3D4600F7FC60 /* ConvertedCurrencyCell.swift in Sources */,
+				469BA75E201E831B00F7FC60 /* ConvertedCurrencyModel.swift in Sources */,
 				469FAA13201CF9C10068F903 /* ViewController.swift in Sources */,
 				469FAA11201CF9C10068F903 /* AppDelegate.swift in Sources */,
+				469BA751201D16CF00F7FC60 /* Manager.swift in Sources */,
+				469BA75C201D7E4D00F7FC60 /* GlobalConstants.swift in Sources */,
+				469BA759201D460900F7FC60 /* CurrencyModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -633,6 +701,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YH8GHTGE4A;
 				INFOPLIST_FILE = MobileChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stan.MobileChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -649,6 +718,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = YH8GHTGE4A;
 				INFOPLIST_FILE = MobileChallenge/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = stan.MobileChallenge;
 				PRODUCT_NAME = "$(TARGET_NAME)";
