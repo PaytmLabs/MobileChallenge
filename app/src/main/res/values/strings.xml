@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MobileChallenge</string>
+
+    <string name="url">http://api.fixer.io/</string>
+</resources>
